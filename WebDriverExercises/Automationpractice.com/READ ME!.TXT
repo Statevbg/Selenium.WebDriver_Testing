@@ -1,9 +1,0 @@
-TEST CASES -  URL ---> https://docs.google.com/spreadsheets/d/1p72bkB9orQGizHWqeGoIvKZPpGtgpBTljnBrZjaQP90/edit?usp=sharing <--- URL
-
-These test cases are written for exercise purposes!
-
-Test execution is automated with POM and AAA design patterns, and some custom CSS Selectors!
-
-
-
-
