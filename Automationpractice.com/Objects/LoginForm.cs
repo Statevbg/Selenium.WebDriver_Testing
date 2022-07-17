@@ -28,10 +28,7 @@ namespace Automationpractice.com.Objects
         public IWebElement positiveResult => driver.FindElement(By.ClassName("info-account"));
         public IWebElement negativeResult => driver.FindElement(By.CssSelector("#center_column > div.alert.alert-danger > p"));
 
-      //  public void Open()
-       // {
-       //     driver.Navigate().GoToUrl(PageUrl);
-        //}
+     
         public void Enter_Credentials(string user, string pass)
         {
             signIn.Click();
