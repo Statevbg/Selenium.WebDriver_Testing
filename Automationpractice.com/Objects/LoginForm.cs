@@ -17,6 +17,7 @@ namespace Automationpractice.com.Objects
             this.driver = driver;
             driver.Navigate().GoToUrl(PageUrl);
             driver.Manage().Window.Maximize();
+            driver.Manage().Cookies.DeleteAllCookies();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             
         }
