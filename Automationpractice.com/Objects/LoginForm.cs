@@ -1,9 +1,6 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 namespace Automationpractice.com.Objects
 {
@@ -32,6 +29,8 @@ namespace Automationpractice.com.Objects
      
         public void Enter_Credentials(string user, string pass)
         {
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementToBeClickable(signIn));
             signIn.Click();
             userEmail.Click();
             userEmail.SendKeys(user);
