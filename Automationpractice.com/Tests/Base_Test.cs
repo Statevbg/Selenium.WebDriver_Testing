@@ -16,6 +16,7 @@ namespace Automationpractice.com.Tests
         public void Setup()
         {
             driver = new ChromeDriver();
+            driver.Manage().Cookies.DeleteAllCookies();
         }
 
         [TearDown]
